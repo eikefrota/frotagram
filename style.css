@@ -141,7 +141,6 @@ input[type="submit"]{
 footer{
     text-align: center;
     height: 50px;
-    margin-top: -50px;
 }
 
 footer a{
@@ -149,7 +148,7 @@ footer a{
     text-transform: uppercase;
     font-weight: bold;
     margin-right: 8px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .text-small{
@@ -159,3 +158,114 @@ footer a{
     text-transform: uppercase;
     margin-top: 5px;
 }
+
+
+/* PÁGINA SIGN UP */
+#container-signup{
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 400px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.message{
+    margin: 10px 70px;
+}
+
+.message span{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #8e8e8e;
+}
+
+.face-button{
+    width: 320px;
+    margin: 10px 0;
+    height: 35px;
+    background-color: #0095f6;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.divisor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.line{
+    height: 1px;
+    background-color: #e6e6e6;
+    width: 35%;
+}
+
+.divisor-tag{
+    font-weight: bold;
+    margin: 0 2.5%;
+    color: #8e8e8e;
+    user-select: none;
+}
+
+/* FIM PÁGINA SIGN UP */
+
+/* RESPONSIVIDADE */
+@media (max-width: 850px){
+    .left{
+        display: none;
+    }
+
+    #container{
+        width: 55%;
+    }
+
+    .right{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 660px){
+    #container{
+        width: 70%;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+
+    footer a{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 560px){
+    #container{
+        width: 90%;
+    }
+
+    #container-signup{
+        width: 90%;
+    }
+
+    input[type="password"], input[type="text"], input[type="submit"]{
+        width: 85%;
+    }
+
+    .face-button{
+        width: 85%;
+    }
+
+    .message{
+        margin: 10px 25px;
+    }
+
+}
+
